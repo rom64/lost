@@ -160,7 +160,7 @@ transform: rotate(180deg);
 	position: absolute;
 	font-size: 96px;
 	line-height: 112px;
-	color: #600E09;
+	color: #112820;
 	left: 0;
 	top: -78px;
 	z-index: -1;
@@ -256,7 +256,7 @@ transform: rotate(180deg);
 	left: 0;
 }
 .season-info{
-	position: absolute;
+	position: static;
 	display: flex;
 	max-width: 1385px;
 	padding:44px 47px 64px 35px ;
@@ -330,7 +330,10 @@ transform: rotate(180deg);
 		margin-right: 30px;
 	}
 	.page-logo{
-		display: none;
+		//display: none;
+	}
+	.page-header{
+		height: 130vh;
 	}
 }
 @media(max-width: 768px){
@@ -356,7 +359,10 @@ transform: rotate(180deg);
 		line-height: 36px;
 	}
 	.page-header {
-    height: 150vh;
+    height: 50vh;
+	}
+	.page-logo{
+		display: block;
 	}
 	.season-info{
 		display: block;
@@ -390,7 +396,7 @@ transform: rotate(180deg);
 
 	}
 	.page-logo{
-		display: block;
+
 		padding-top: 10px;
 		z-index: 10;
 	}
@@ -433,6 +439,9 @@ transform: rotate(180deg);
 		bottom: 0;
 		left: 0;
 	}
+	.season-info{
+		position: static ;
+	}
 	.video__text span{
 		padding-right: 100px;
 	}
@@ -446,8 +455,11 @@ transform: rotate(180deg);
 	}
 }
 @media(max-width: 480px){
+	.title{
+		margin-top: 50px;
+	}
 	.page-header{
-		height: 180vh;
+		height: 60vh;
 	}
 	.menu__list{
 		z-index: 20;
@@ -469,7 +481,9 @@ transform: rotate(180deg);
 		height: 50px;
 		background-size: cover;
 	}
-
+	season__inner{
+		padding-top: 100px;
+	}
 }
 
 
